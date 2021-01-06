@@ -11,6 +11,13 @@ body {
     color: black;
 }
 
+.streamlit-button a {
+    color: white;
+}
+/*
+.streamlit-button a:hover {
+    color: 
+*/
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
