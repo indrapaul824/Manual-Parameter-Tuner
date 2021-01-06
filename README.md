@@ -3,16 +3,19 @@
   
 [![UI ](https://img.shields.io/badge/Website-Link%20to%20Web%20App-orange?style=for-the-badge&logo=appveyor)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
 
-## Functionalities
+### Functionalities
 - [x]  Manually tune parameters of different ML algorithms to get the best result on the **Framingham** Heart Disease dataset.
 
-## Check out the published Website here:
+#### *Details on the Dataset and detailed functionalities are present in the Website itself.*
+
+
+### Check out the published Website here:
 
 https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py
 
 <br>
 
-## Instructions to run the web app locally
+### Instructions to run the web app locally
   
 * Pre-requisites:
 	-  Python 3.6 or 3.7 or 3.8
