@@ -11,9 +11,10 @@ body {
     color: black;
 }
 
-.streamlit-button a {
+.sidebar .sidebar-collapse-control a {
     color: white;
 }
+
 /*
 .streamlit-button a:hover {
     color: 
