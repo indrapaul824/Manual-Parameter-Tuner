@@ -6,7 +6,7 @@
 ### Functionalities
 - [x]  Manually tune parameters of different ML algorithms to get the best result on the **Framingham** Heart Disease dataset.
 
-#### *Details on the Dataset and detailed functionalities are present in the Website itself.*
+#### *Detailed description of the Dataset and the functionalities are present in the Website itself.*
 
 
 ### Check out the published Website here:
