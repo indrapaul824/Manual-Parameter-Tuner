@@ -14,8 +14,7 @@ st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://emoji
 
 def main():
     utils.local_css("css/styles.css")
-    st.markdown("# <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png' title='heart'> Heart Disease Prediction"
-                "<h1 align='center'>    Manual Parameter Tuner</h1>", unsafe_allow_html=True) 
+    st.markdown("# <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png' title='heart'> Heart Disease Prediction", unsafe_allow_html=True) 
     st.markdown("### Machine Learning is not only about the algorithms you use but also about the different Parameters "
                 "assigned to each of them. The final model is heavily affected by the parameters used for a specific "
                 "algorithm. "
@@ -38,6 +37,8 @@ def main():
                 "\n ### Even after optimizing parameters, the model would only work properly if accurate data is provided to it."
                 " So, through this web app, the users will be able to get a feel of hyperparameter tuning but only on this specific dataset."
                 "\n ## Head to the *Manual Parameter Tuning* section to get started!")
+    
+    st.sidebar.title("Manual Parameter Tuner")
 
     st.sidebar.markdown("Manually select the model you want to view and use the interactive text boxes, sliding bars "
                         "and buttons to tune the respective models. More than one options are provided for each model"
