@@ -1,7 +1,7 @@
 <h1 align="center"> Manual Parameter Tuner  </h2>
 <h3 align="center"> A web app for beginners in Machine Learning and Data Science to fiddle with different parameters of various ML algorithms on the Framingham Heart Disease dataset. <h4>
   
-[![UI ](https://img.shields.io/badge/Website-Link%20to%20Web%20App-orange?style=for-the-badge&logo=appveyor)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
+[![UI ](https://img.shields.io/badge/Deployed-Open%20in%20Streamlit-orange?style=for-the-badge&logo=appveyor)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
 
 ### Functionalities
 - [x]  Manually tune parameters of different ML algorithms to get the best result on the **Framingham** Heart Disease dataset.
