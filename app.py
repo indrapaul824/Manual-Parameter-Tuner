@@ -14,7 +14,7 @@ st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://emoji
 
 def main():
     utils.local_css("css/styles.css")
-    st.markdown("# Heart Disease Prediction - Manual Parameter Tuner <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png' title='Heart'"))
+    st.markdown("# Heart Disease Prediction - Manual Parameter Tuner <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png'>"))
     st.sidebar.title("Manual Parameter Tuning")
     st.markdown("### Machine Learning is not only about the algorithms you use but also about the different Parameters "
                 "assigned to each of them. The final model is heavily affected by the parameters used for a specific "
