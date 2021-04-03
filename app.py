@@ -1,19 +1,19 @@
-import utils
-import model
 # Data Loading and Numerical Operations
 import pandas as pd
-import numpy as np
-# Metrics
-from sklearn.metrics import precision_score, recall_score
 # Web App
 import streamlit as st
+# Metrics
+from sklearn.metrics import precision_score, recall_score
+
+import scripts.model as model
+import scripts.utils as utils
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png', layout='centered', initial_sidebar_state='expanded')
 
 
 def main():
-    utils.local_css("css/styles.css")
+    utils.local_css("scripts/css/styles.css")
     st.markdown("# <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png' title='heart'> Heart Disease Prediction", unsafe_allow_html=True) 
     st.markdown("### Machine Learning is not only about the algorithms you use but also about the different Parameters "
                 "assigned to each of them. The final model is heavily affected by the parameters used for a specific "
