@@ -1,8 +1,9 @@
 <h1 align="center"> Manual Parameter Tuner  </h2>
 <h3 align="center"> A web app for beginners in Machine Learning and Data Science to fiddle with different parameters of various ML algorithms on the Framingham Heart Disease dataset. <h4>
   
-[![UI ](https://img.shields.io/badge/Deployed-in%20Streamlit%20-->-orange?style=for-the-badge&logo=appveyor)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
+[![UI ](https://img.shields.io/badge/Deployed-%20---->-blue?style=for-the-badge&logo=appveyor)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)](https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py)
+
 
 ### Functionalities
 - [x]  Manually tune parameters of different ML algorithms to get the best result on the **Framingham** Heart Disease dataset.
@@ -34,11 +35,11 @@ https://share.streamlit.io/indrap24/manual-parameter-tuner/main/app.py
   ```
   Install the python dependencies from requirements.txt:
     ```bash
-    pip install requirements.txt
+    pip install -r requirements.txt
      ```
 * Directions to Execute
 
-    From anywhere in the project directory, run the following command in the terminal -
+    From the same project directory, run the following command in the terminal -
     ```bash
     streamlit run app.py
     ```
