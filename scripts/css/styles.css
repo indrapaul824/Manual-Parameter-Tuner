@@ -11,6 +11,14 @@ body {
     color: black;
 }
 
+.streamlit-button {
+    color: crimson;
+}
+
+.streamlit-button.icon-button {
+    border: 1px solid;
+}
+
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
