@@ -46,42 +46,45 @@ def preprocess(data):
     return data
 
 
+@st.cache(persist=True)
 def visualize(viz_list, data):
+    
+    categorical_features = ['male', 'education', 'currentSmoker', 'BPMeds',
+                        'prevalentStroke', 'prevalentHyp', 'diabetes']
+    num_plots = len(categorical_features)
+    tot_cols = 2
+    tot_rows = num_plots//tot_cols + 1
+    fig, axs = plt.subplots(nrows=tot_rows, ncols=tot_cols, figsize=(7*tot_cols, 7*tot_rows),
+                        facecolor='w', constrained_layout=True)
+    for i, var in enumerate(categorical_features):
+        row = i // tot_cols
+        pos = i % tot_cols
+        sns.countplot(x=var, data=data, ax=axs[row][pos])
     if "Categorical Visualisation" in viz_list:
         st.subheader("Distribution of all Categorical features")
-        categorical_features = ['male', 'education', 'currentSmoker', 'BPMeds',
-                            'prevalentStroke', 'prevalentHyp', 'diabetes']
-        num_plots = len(categorical_features)
-        tot_cols = 2
-        tot_rows = num_plots//tot_cols + 1
-        fig, axs = plt.subplots(nrows=tot_rows, ncols=tot_cols, figsize=(7*tot_cols, 7*tot_rows),
-                            facecolor='w', constrained_layout=True)
-        for i, var in enumerate(categorical_features):
-            row = i // tot_cols
-            pos = i % tot_cols
-            sns.countplot(x=var, data=data, ax=axs[row][pos])
         st.pyplot()
 
+
+    numeric_features = ['cigsPerDay', 'totChol', 'sysBP', 'diaBP',
+                    'BMI', 'heartRate', 'glucose']
+    num_plots = len(numeric_features)
+    tot_cols = 2
+    tot_rows = num_plots // tot_cols + 1
+    fig, axs = plt.subplots(nrows=tot_rows, ncols=tot_cols, figsize=(7 * tot_cols, 7 * tot_rows),
+                        facecolor='w', constrained_layout=True)
+    for i, var in enumerate(numeric_features):
+        row = i // tot_cols
+        pos = i % tot_cols
+        sns.kdeplot(x=var, data=data, ax=axs[row][pos])
     if "Numerical Visualisation" in viz_list:
         st.subheader("Distribution of all numerical features")
-        numeric_features = ['cigsPerDay', 'totChol', 'sysBP', 'diaBP',
-                        'BMI', 'heartRate', 'glucose']
-        num_plots = len(numeric_features)
-        tot_cols = 2
-        tot_rows = num_plots // tot_cols + 1
-        fig, axs = plt.subplots(nrows=tot_rows, ncols=tot_cols, figsize=(7 * tot_cols, 7 * tot_rows),
-                            facecolor='w', constrained_layout=True)
-        for i, var in enumerate(numeric_features):
-            row = i // tot_cols
-            pos = i % tot_cols
-            sns.kdeplot(x=var, data=data, ax=axs[row][pos])
         st.pyplot()
 
 
+    sns.lmplot(x='sysBP', y='diaBP', data=data, hue='TenYearCHD',
+                   col='male', row='currentSmoker')
     if 'sysBP and diaBP Visualisation' in viz_list:
         st.subheader("TenYearCHD Distribution of sysBP and diaBP with respect to currentSmoker and gender")
-        sns.lmplot(x='sysBP', y='diaBP', data=data, hue='TenYearCHD',
-                   col='male', row='currentSmoker')
         st.pyplot()
 
 
