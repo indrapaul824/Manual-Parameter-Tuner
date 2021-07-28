@@ -46,7 +46,7 @@ def preprocess(data):
     return data
 
 
-@st.cache(persist=True)
+@st.cache(suppress_st_warning=True)
 def visualize(viz_list, data):
     
     categorical_features = ['male', 'education', 'currentSmoker', 'BPMeds',
@@ -88,7 +88,7 @@ def visualize(viz_list, data):
         st.pyplot()
 
 
-@st.cache(persist=True)
+@st.cache(persist=True, suppress_st_warning=True)
 def feature_selection(data):
     X = data.iloc[:, 0:15]
     y = data.iloc[:, -1]
