@@ -46,7 +46,7 @@ def preprocess(data):
     return data
 
 
-@st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True, persist=True)
 def visualize(viz_list, data):
     
     categorical_features = ['male', 'education', 'currentSmoker', 'BPMeds',
