@@ -9,7 +9,7 @@ import scripts.model as model
 import scripts.utils as utils
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/anatomical-heart_1fac0.png', layout='centered', initial_sidebar_state='expanded')
+st.set_page_config(page_title='Manual Parameter Tuner', page_icon='🫀', layout='centered', initial_sidebar_state='expanded')
 
 
 def main():
