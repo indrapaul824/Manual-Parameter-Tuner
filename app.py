@@ -5,6 +5,7 @@ import streamlit as st
 # Metrics
 from sklearn.metrics import precision_score, recall_score
 
+
 import scripts.model as model
 import scripts.utils as utils
 
@@ -14,8 +15,9 @@ st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://raw.g
 
 def main():
     utils.local_css("scripts/css/styles.css")
-    st.markdown("# <img src='https://raw.githubusercontent.com/IndraP24/Manual-Parameter-Tuner/main/assets/1fac0.png' title='heart'> Heart Disease Prediction", unsafe_allow_html=True) 
-    st.markdown("### Machine Learning is not only about the algorithms you use but also about the different Parameters "
+    st.markdown("# <img src='https://raw.githubusercontent.com/IndraP24/Manual-Parameter-Tuner/main/assets/1fac0.png' title='heart'> Heart Disease Prediction", unsafe_allow_html=True)
+    st.sidebar.info("""Made with ❤️ by [Indrashis](https://www.twitter.com/indrapaul824) ([IndraP24](https://github.com/IndraP24))""")
+    st.markdown("#### Machine Learning is not only about the algorithms you use but also about the different Parameters "
                 "assigned to each of them. The final model is heavily affected by the parameters used for a specific "
                 "algorithm. "
                 "\nThis interactive web app will help you to explore the various parameters of different ML algorithms."
