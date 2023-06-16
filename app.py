@@ -15,7 +15,8 @@ st.set_page_config(page_title='Manual Parameter Tuner', page_icon='https://raw.g
 
 def main():
     utils.local_css("scripts/css/styles.css")
-    st.markdown("# <img src='https://raw.githubusercontent.com/indrapaul824/Manual-Parameter-Tuner/main/assets/1fac0.png' title='heart'> Heart Disease Prediction", unsafe_allow_html=True)
+    st.markdown("# <img src='https://raw.githubusercontent.com/indrapaul824/Manual-Parameter-Tuner/main/assets/1fac0.png' title='heart'> Manual Parameter Tuner", unsafe_allow_html=True)
+    st.marksown("### Heart Disease Prediction")
     st.sidebar.info("""Made with ❤️ by [Indrashis Paul](https://www.twitter.com/indrapaul824)""")
     st.markdown("#### Machine Learning is not only about the algorithms you use but also about the different Parameters "
                 "assigned to each of them. The final model is heavily affected by the parameters used for a specific "
