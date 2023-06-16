@@ -41,7 +41,7 @@ def main():
                 " So, through this web app, the users will be able to get a feel of hyperparameter tuning but only on this specific dataset."
                 "\n ## Head to the *Manual Parameter Tuning* section to get started!")
     
-    st.sidebar.title("Manual Parameter Tuner")
+    st.sidebar.title("Parameter Tuner")
 
     st.sidebar.markdown("Manually select the model you want to view and use the interactive text boxes, sliding bars "
                         "and buttons to tune the respective models. More than one options are provided for each model"
